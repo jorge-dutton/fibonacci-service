@@ -1,0 +1,6 @@
+com.jdutton.fibonacci
+com.jdutton.fibonacci.controllers
+com.jdutton.fibonacci.domain
+com.jdutton.fibonacci.exceptions
+com.jdutton.fibonacci.service
+com.jdutton.fibonacci.service.impl

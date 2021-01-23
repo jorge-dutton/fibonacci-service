@@ -1,0 +1,56 @@
+#%RAML 1.0
+title: fibonacci-service
+version: v1
+protocols: [HTTP]
+baseUri: http://localhost:8585/api/v1
+mediaType: application/json
+types:
+  FibonacciSequence:
+    type: object
+    properties:
+      sequence:
+        required: true
+        type: array
+  FibonacciNumber:
+    type: object
+    properties:
+      number:
+        required: true
+        type: integer
+  FibonacciErrorInfo:
+    type: object
+    properties:
+      status:
+        required: true
+        type: integer
+      exception:
+        required: true
+        type: string
+
+/fibonacci:
+  get:
+    description: Lista la serie completa de Fibonacci hasta el número 22390. El resultado es un JSON de unos 50Mb de tamaño.
+    responses:
+      200:
+        body:
+          application/json:
+            type: FibonacciSequence
+  /{topNumber}:
+    get:
+      description: Lista la serie completa de Fibonacci hasta el número indicado por topNumber.
+      responses:
+        200:
+          body:
+            application/json:
+              type: FibonacciSequence
+              example: {"sequence":[0,1,1,2,3,5,8,13,21,34,55,89,144,233,377]}
+
+  /number/{number}:
+    get:
+      description: Devuelve el valor de la secuencia de Fibonacci para el número indicado por number.
+      responses:
+        200:
+          body:
+            application/json:
+              type: FibonacciNumber
+              example: { "number" : 17711 }

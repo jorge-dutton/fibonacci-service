@@ -1,0 +1,1 @@
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"com.jdutton.fibonacci"},{"l":"com.jdutton.fibonacci.controllers"},{"l":"com.jdutton.fibonacci.domain"},{"l":"com.jdutton.fibonacci.exceptions"},{"l":"com.jdutton.fibonacci.service"},{"l":"com.jdutton.fibonacci.service.impl"}]
