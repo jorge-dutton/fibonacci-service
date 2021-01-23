@@ -16,4 +16,4 @@ Para poder ejecutarlo hay dos opciones:
 2. Se puede ejecutar la imagen de Docker del proyecto. Para ello basta ejecutar 
       $ docker run  -d -p 8585:8585 --name fibonacci-service jorgedutton/fibonacci-service
 Para probar el servicio, se puede acceder desde un navegador a la documentación de la API y ejecutar los ejemplos:
-      http://localhost:8585/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/fibonacci-service/getFibonacciNumber
+      http://localhost:8585/swagger-ui/index.html?configUrl=/v3/api-docs/swagger-config#/fibonacci-service
